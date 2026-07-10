@@ -1,0 +1,1157 @@
+date,type,category,amount
+2025-01-01,Expense,Salaries,5805.23
+2025-01-01,Revenue,Other Income,500
+2025-01-01,Revenue,Product Sales,8762.9
+2025-01-01,Revenue,Product Sales,5899.5
+2025-01-01,Expense,Utilities,807.06
+2025-01-02,Expense,Salaries,8559.86
+2025-01-02,Revenue,Service Fees,4261.84
+2025-01-02,Expense,Salaries,8519.69
+2025-01-04,Expense,Utilities,628.41
+2025-01-04,Revenue,Product Sales,5327.11
+2025-01-04,Revenue,Other Income,516.41
+2025-01-04,Expense,Marketing,1841.88
+2025-01-05,Revenue,Product Sales,3873.54
+2025-01-05,Revenue,Service Fees,4027.04
+2025-01-06,Revenue,Service Fees,4304.75
+2025-01-07,Expense,Misc,750.85
+2025-01-07,Expense,Misc,1636.06
+2025-01-07,Revenue,Other Income,500
+2025-01-07,Expense,COGS,13394.91
+2025-01-07,Revenue,Product Sales,5397.49
+2025-01-08,Revenue,Product Sales,4505.37
+2025-01-08,Revenue,Product Sales,6462.45
+2025-01-09,Revenue,Other Income,500
+2025-01-09,Expense,Utilities,593.26
+2025-01-10,Revenue,Service Fees,3930.69
+2025-01-11,Revenue,Other Income,500
+2025-01-11,Revenue,Other Income,500
+2025-01-12,Revenue,Other Income,500
+2025-01-13,Expense,Marketing,3903.8
+2025-01-13,Revenue,Product Sales,6758.62
+2025-01-14,Revenue,Product Sales,4735.87
+2025-01-14,Revenue,Product Sales,5354.21
+2025-01-14,Revenue,Product Sales,7168.45
+2025-01-14,Expense,Misc,1533.49
+2025-01-15,Revenue,Service Fees,2635.35
+2025-01-15,Revenue,Other Income,500
+2025-01-15,Revenue,Service Fees,3364.83
+2025-01-15,Expense,Rent,2845.55
+2025-01-16,Revenue,Other Income,500
+2025-01-16,Revenue,Product Sales,3729.6
+2025-01-16,Revenue,Other Income,500
+2025-01-16,Expense,COGS,16322.21
+2025-01-16,Expense,Salaries,10825.99
+2025-01-17,Revenue,Service Fees,4259.81
+2025-01-17,Expense,Rent,3154.05
+2025-01-17,Revenue,Service Fees,2667.56
+2025-01-17,Revenue,Product Sales,6195.15
+2025-01-17,Revenue,Other Income,500
+2025-01-17,Revenue,Other Income,500
+2025-01-18,Expense,COGS,10822.25
+2025-01-18,Revenue,Product Sales,6810.15
+2025-01-18,Revenue,Product Sales,3832.12
+2025-01-19,Revenue,Other Income,500
+2025-01-19,Expense,Marketing,2906.32
+2025-01-19,Revenue,Service Fees,6667.19
+2025-01-19,Expense,Utilities,589.1
+2025-01-19,Revenue,Service Fees,5272.15
+2025-01-20,Revenue,Product Sales,5391.97
+2025-01-20,Expense,Salaries,11070.27
+2025-01-20,Revenue,Product Sales,8239.18
+2025-01-21,Revenue,Product Sales,6919.16
+2025-01-21,Revenue,Service Fees,5240.9
+2025-01-21,Revenue,Service Fees,2232.74
+2025-01-22,Expense,Salaries,10003.67
+2025-01-23,Expense,Misc,1455.52
+2025-01-23,Revenue,Other Income,500
+2025-01-23,Revenue,Product Sales,1531.08
+2025-01-24,Revenue,Product Sales,2796.75
+2025-01-24,Revenue,Product Sales,5735.99
+2025-01-25,Expense,Marketing,2970.26
+2025-01-26,Revenue,Other Income,500
+2025-01-26,Revenue,Product Sales,6159.06
+2025-01-26,Revenue,Product Sales,4390.66
+2025-01-26,Expense,Rent,3369.76
+2025-01-26,Expense,Salaries,9314.31
+2025-01-28,Expense,Utilities,994.41
+2025-01-28,Revenue,Other Income,500
+2025-01-28,Expense,COGS,14956.79
+2025-01-28,Expense,COGS,14547.11
+2025-01-28,Expense,Rent,3526.85
+2025-01-28,Revenue,Product Sales,4415.28
+2025-01-31,Expense,Utilities,565.98
+2025-01-31,Expense,Salaries,8137.04
+2025-01-31,Revenue,Service Fees,2287.88
+2025-02-01,Expense,Misc,829.35
+2025-02-01,Expense,Utilities,606.71
+2025-02-02,Revenue,Service Fees,2931.67
+2025-02-03,Revenue,Product Sales,8045.85
+2025-02-03,Expense,Rent,1601.8
+2025-02-03,Expense,COGS,11731.87
+2025-02-03,Expense,Marketing,1545.53
+2025-02-03,Revenue,Service Fees,1841.78
+2025-02-03,Revenue,Product Sales,5425.63
+2025-02-04,Revenue,Service Fees,3232.23
+2025-02-04,Revenue,Product Sales,8981.22
+2025-02-05,Revenue,Product Sales,8965.73
+2025-02-05,Revenue,Service Fees,2533.59
+2025-02-05,Revenue,Product Sales,5208.46
+2025-02-05,Expense,COGS,7770.33
+2025-02-05,Expense,Rent,1710.2
+2025-02-06,Expense,Marketing,1086.34
+2025-02-06,Expense,Misc,637.56
+2025-02-07,Expense,COGS,11979.2
+2025-02-07,Expense,Misc,438.47
+2025-02-07,Expense,Misc,573.26
+2025-02-07,Revenue,Product Sales,3514.89
+2025-02-08,Revenue,Service Fees,1888.47
+2025-02-08,Revenue,Other Income,500
+2025-02-08,Expense,Utilities,443.63
+2025-02-08,Revenue,Product Sales,3105.46
+2025-02-08,Expense,COGS,13310.31
+2025-02-08,Expense,COGS,5906.31
+2025-02-08,Expense,Salaries,5626.79
+2025-02-09,Revenue,Other Income,622.53
+2025-02-09,Expense,Salaries,6031.92
+2025-02-10,Revenue,Product Sales,8178.15
+2025-02-10,Expense,Marketing,1660.82
+2025-02-10,Expense,Marketing,749.83
+2025-02-11,Expense,Misc,327.49
+2025-02-11,Revenue,Product Sales,3824.53
+2025-02-11,Revenue,Product Sales,6421.58
+2025-02-11,Revenue,Service Fees,2256.74
+2025-02-11,Revenue,Service Fees,2175.29
+2025-02-12,Expense,Rent,1777.85
+2025-02-12,Expense,Utilities,429.15
+2025-02-12,Expense,Salaries,4418.47
+2025-02-12,Revenue,Other Income,638.21
+2025-02-12,Revenue,Service Fees,2066.91
+2025-02-13,Revenue,Product Sales,4943.13
+2025-02-13,Revenue,Other Income,631.04
+2025-02-13,Expense,COGS,12620.42
+2025-02-14,Revenue,Product Sales,8411.59
+2025-02-14,Expense,Marketing,2147.74
+2025-02-14,Expense,Misc,612.48
+2025-02-15,Expense,Rent,677.07
+2025-02-15,Revenue,Other Income,581.28
+2025-02-16,Revenue,Service Fees,2920.13
+2025-02-16,Revenue,Service Fees,2130.55
+2025-02-16,Revenue,Other Income,500
+2025-02-16,Revenue,Other Income,574.09
+2025-02-16,Expense,Rent,1019.77
+2025-02-17,Revenue,Service Fees,1759.79
+2025-02-17,Revenue,Other Income,625.96
+2025-02-17,Expense,Misc,778.21
+2025-02-17,Revenue,Product Sales,9372.73
+2025-02-17,Revenue,Product Sales,5787.52
+2025-02-18,Revenue,Other Income,727.25
+2025-02-18,Expense,Marketing,1976.33
+2025-02-18,Revenue,Service Fees,2582.81
+2025-02-18,Expense,Salaries,7384.88
+2025-02-18,Expense,Misc,207.97
+2025-02-19,Revenue,Service Fees,1926.97
+2025-02-19,Expense,Utilities,635.77
+2025-02-19,Expense,Salaries,8262.24
+2025-02-20,Revenue,Service Fees,3183.32
+2025-02-20,Revenue,Product Sales,4969.64
+2025-02-21,Expense,Rent,1349.04
+2025-02-21,Expense,Rent,1349.33
+2025-02-21,Expense,Utilities,530.19
+2025-02-21,Revenue,Other Income,500
+2025-02-21,Expense,Utilities,328.57
+2025-02-22,Revenue,Service Fees,2249.69
+2025-02-22,Revenue,Product Sales,6547.81
+2025-02-22,Revenue,Product Sales,5882.57
+2025-02-22,Expense,Misc,541.59
+2025-02-22,Revenue,Service Fees,1971.95
+2025-02-22,Expense,Salaries,6266.14
+2025-02-23,Expense,Utilities,368.42
+2025-02-23,Expense,Marketing,1632.3
+2025-02-23,Expense,Rent,249.52
+2025-02-23,Revenue,Product Sales,8671.15
+2025-02-23,Revenue,Service Fees,2502.72
+2025-02-23,Expense,Rent,1315.51
+2025-02-24,Expense,Salaries,7866.39
+2025-02-25,Revenue,Product Sales,5985.82
+2025-02-25,Expense,Misc,599.17
+2025-02-25,Revenue,Product Sales,4613.83
+2025-02-25,Revenue,Product Sales,4021.84
+2025-02-25,Revenue,Service Fees,1517.09
+2025-02-25,Expense,Marketing,2036.63
+2025-02-25,Expense,Utilities,468.41
+2025-02-25,Revenue,Service Fees,2702.33
+2025-02-26,Revenue,Service Fees,3074.89
+2025-02-26,Revenue,Service Fees,2773.81
+2025-02-26,Revenue,Other Income,624.68
+2025-02-26,Revenue,Other Income,722.67
+2025-02-26,Revenue,Product Sales,4867.51
+2025-02-27,Expense,Marketing,1062.56
+2025-02-27,Revenue,Product Sales,6392.99
+2025-03-02,Revenue,Product Sales,6124.63
+2025-03-02,Expense,Rent,2095.32
+2025-03-02,Revenue,Service Fees,1360.67
+2025-03-03,Revenue,Other Income,500
+2025-03-03,Expense,Utilities,493.81
+2025-03-03,Expense,Utilities,442.62
+2025-03-03,Revenue,Other Income,510.45
+2025-03-03,Expense,Misc,824.75
+2025-03-04,Expense,Misc,437.13
+2025-03-04,Expense,Salaries,12526.0
+2025-03-05,Revenue,Service Fees,1747.28
+2025-03-05,Revenue,Product Sales,7380.38
+2025-03-05,Revenue,Product Sales,9108.32
+2025-03-05,Revenue,Service Fees,2799.74
+2025-03-05,Revenue,Product Sales,3263.1
+2025-03-05,Revenue,Product Sales,6455.49
+2025-03-05,Revenue,Other Income,500
+2025-03-06,Revenue,Product Sales,4648.01
+2025-03-06,Expense,COGS,6864.1
+2025-03-06,Revenue,Product Sales,7291.91
+2025-03-06,Expense,Misc,576.75
+2025-03-06,Revenue,Service Fees,1492.44
+2025-03-07,Expense,Utilities,308.83
+2025-03-07,Revenue,Service Fees,2474.51
+2025-03-07,Expense,Marketing,2712.22
+2025-03-08,Revenue,Other Income,500
+2025-03-08,Revenue,Other Income,538.45
+2025-03-08,Revenue,Service Fees,2045.61
+2025-03-08,Expense,Marketing,3347.87
+2025-03-08,Expense,Utilities,338.81
+2025-03-09,Expense,Salaries,10868.78
+2025-03-09,Revenue,Service Fees,2313.77
+2025-03-10,Expense,COGS,7141.43
+2025-03-10,Expense,COGS,5342.04
+2025-03-10,Refund,Misc,1200
+2025-03-10,Expense,COGS,8464.73
+2025-03-10,Revenue,Product Sales,6456.53
+2025-03-11,Expense,Utilities,461.93
+2025-03-11,Expense,COGS,8989.34
+2025-03-11,Revenue,Other Income,500
+2025-03-11,Expense,COGS,9533.91
+2025-03-11,Revenue,Product Sales,5059.38
+2025-03-12,Revenue,Product Sales,5163.64
+2025-03-12,Revenue,Product Sales,7908.6
+2025-03-13,Expense,Misc,688.15
+2025-03-13,Revenue,Service Fees,2502.3
+2025-03-13,Expense,Rent,873.24
+2025-03-13,Expense,Misc,453.43
+2025-03-13,Expense,Marketing,3448.52
+2025-03-13,Expense,Rent,1902.09
+2025-03-13,Expense,Misc,565.91
+2025-03-14,Expense,Marketing,3604.1
+2025-03-14,Revenue,Product Sales,6246.2
+2025-03-14,Revenue,Service Fees,1452.0
+2025-03-15,Expense,Rent,1257.27
+2025-03-15,Revenue,Service Fees,1845.11
+2025-03-16,Revenue,Other Income,500
+2025-03-16,Revenue,Service Fees,2147.71
+2025-03-16,Expense,Utilities,493.98
+2025-03-16,Revenue,Service Fees,1787.17
+2025-03-16,Expense,COGS,9378.21
+2025-03-17,Expense,Utilities,396.59
+2025-03-17,Revenue,Product Sales,4170.52
+2025-03-18,Revenue,Product Sales,5868.25
+2025-03-19,Revenue,Service Fees,1559.51
+2025-03-19,Expense,Utilities,369.51
+2025-03-19,Revenue,Product Sales,5777.49
+2025-03-20,Expense,Salaries,8359.85
+2025-03-20,Revenue,Service Fees,2534.82
+2025-03-22,Expense,Rent,1030.6
+2025-03-22,Expense,Misc,592.91
+2025-03-22,Revenue,Other Income,519.37
+2025-03-22,Revenue,Service Fees,1583.4
+2025-03-23,Expense,COGS,7252.37
+2025-03-23,Expense,Misc,502.51
+2025-03-23,Revenue,Service Fees,2041.6
+2025-03-23,Revenue,Product Sales,9084.68
+2025-03-23,Expense,Rent,1077.58
+2025-03-24,Revenue,Product Sales,5823.92
+2025-03-24,Expense,Misc,522.27
+2025-03-24,Revenue,Other Income,500
+2025-03-24,Expense,Rent,2451.35
+2025-03-24,Expense,Misc,657.98
+2025-03-24,Expense,Salaries,15087.54
+2025-03-24,Revenue,Product Sales,8058.12
+2025-03-25,Revenue,Other Income,500
+2025-03-25,Expense,Marketing,4010.78
+2025-03-25,Revenue,Product Sales,5513.99
+2025-03-25,Revenue,Service Fees,2367.44
+2025-03-25,Revenue,Service Fees,2364.52
+2025-03-25,Revenue,Service Fees,2201.11
+2025-03-25,Revenue,Product Sales,7200.04
+2025-03-25,Expense,COGS,9492.47
+2025-03-25,Revenue,Product Sales,7504.18
+2025-03-25,Revenue,Service Fees,3488.38
+2025-03-26,Revenue,Other Income,500
+2025-03-26,Revenue,Other Income,504.68
+2025-03-27,Revenue,Product Sales,7331.96
+2025-03-28,Revenue,Service Fees,2879.15
+2025-03-28,Revenue,Product Sales,5122.04
+2025-03-28,Expense,Rent,1356.42
+2025-03-29,Revenue,Product Sales,6376.66
+2025-03-29,Expense,COGS,5063.03
+2025-03-29,Revenue,Service Fees,2343.04
+2025-03-29,Revenue,Service Fees,2308.65
+2025-03-29,Revenue,Other Income,718.85
+2025-03-29,Revenue,Other Income,500
+2025-03-29,Expense,Salaries,9647.61
+2025-04-01,Expense,Utilities,273.91
+2025-04-01,Expense,Marketing,1553.71
+2025-04-02,Revenue,Product Sales,7254.19
+2025-04-02,Revenue,Other Income,500
+2025-04-02,Revenue,Other Income,500
+2025-04-02,Revenue,Other Income,500
+2025-04-02,Expense,COGS,10702.42
+2025-04-03,Revenue,Service Fees,2901.72
+2025-04-03,Expense,Utilities,411.02
+2025-04-03,Expense,COGS,7117.34
+2025-04-04,Revenue,Product Sales,4916.59
+2025-04-04,Revenue,Product Sales,5412.78
+2025-04-04,Expense,Rent,1853.45
+2025-04-04,Expense,Salaries,7662.18
+2025-04-05,Expense,Salaries,5991.14
+2025-04-05,Expense,Marketing,1254.88
+2025-04-05,Expense,Rent,1587.7
+2025-04-05,Expense,Marketing,875.77
+2025-04-05,Expense,Rent,N/A
+2025-04-06,Revenue,Service Fees,5467.13
+2025-04-06,Expense,Misc,708.16
+2025-04-06,Revenue,Service Fees,5100.37
+2025-04-06,Expense,Rent,1878.63
+2025-04-06,Revenue,Product Sales,8392.8
+2025-04-07,Revenue,Product Sales,5523.9
+2025-04-08,Revenue,Product Sales,6456.59
+2025-04-08,Revenue,Other Income,500
+2025-04-08,Expense,Utilities,389.66
+2025-04-09,Revenue,Product Sales,9512.18
+2025-04-09,Revenue,Other Income,500
+2025-04-09,Revenue,Other Income,500
+2025-04-09,Revenue,Service Fees,4824.95
+2025-04-09,Revenue,Product Sales,7485.63
+2025-04-10,Revenue,Other Income,624.01
+2025-04-10,Expense,COGS,10894.07
+2025-04-10,Expense,Utilities,322.76
+2025-04-10,Revenue,Product Sales,5200.85
+2025-04-11,Revenue,Other Income,500
+2025-04-11,Revenue,Product Sales,11131.15
+2025-04-11,Revenue,Other Income,500
+2025-04-11,Expense,Rent,940.44
+2025-04-11,Revenue,Product Sales,7058.58
+2025-04-12,Expense,Misc,1107.18
+2025-04-12,Expense,Utilities,439.57
+2025-04-12,Revenue,Other Income,500
+2025-04-12,Expense,Salaries,7387.26
+2025-04-12,Expense,Marketing,1591.14
+2025-04-13,Expense,Misc,1319.11
+2025-04-13,Expense,Salaries,8767.52
+2025-04-13,Revenue,Service Fees,642.2
+2025-04-13,Revenue,Product Sales,5061.32
+2025-04-14,Revenue,Service Fees,5192.14
+2025-04-14,Expense,COGS,8175.11
+2025-04-14,Expense,COGS,9925.84
+2025-04-16,Expense,Utilities,394.39
+2025-04-17,Expense,Marketing,1402.7
+2025-04-17,Expense,Utilities,330.55
+2025-04-17,Expense,COGS,10078.72
+2025-04-17,Revenue,Service Fees,2945.09
+2025-04-17,Revenue,Product Sales,4811.35
+2025-04-18,Expense,Rent,1261.89
+2025-04-18,Expense,COGS,11340.81
+2025-04-18,Expense,Utilities,559.4
+2025-04-18,Revenue,Other Income,554.87
+2025-04-19,Revenue,Service Fees,3723.17
+2025-04-19,Revenue,Product Sales,7955.92
+2025-04-19,Expense,Marketing,1606.27
+2025-04-19,Expense,Utilities,362.92
+2025-04-19,Revenue,Other Income,500
+2025-04-19,Expense,Marketing,1661.49
+2025-04-20,Revenue,Other Income,500
+2025-04-20,Revenue,Product Sales,7015.96
+2025-04-21,Expense,Misc,25163.12
+2025-04-22,Revenue,Product Sales,4825.39
+2025-04-22,Expense,Marketing,1446.91
+2025-04-22,Revenue,Service Fees,2283.82
+2025-04-22,Revenue,Product Sales,5550.13
+2025-04-23,Revenue,Service Fees,2819.26
+2025-04-23,Revenue,Service Fees,5192.39
+2025-04-23,Expense,Marketing,1707.13
+2025-04-24,Revenue,Product Sales,8538.91
+2025-04-24,Revenue,Service Fees,2428.62
+2025-04-24,Expense,Salaries,8894.96
+2025-04-24,Expense,Rent,1444.78
+2025-04-24,Expense,Rent,1641.45
+2025-04-25,Revenue,Product Sales,7076.32
+2025-04-25,Revenue,Product Sales,11231.89
+2025-04-25,Revenue,Other Income,500
+2025-04-25,Revenue,Other Income,500
+2025-04-25,Expense,Salaries,7770.85
+2025-04-26,Expense,Utilities,427.1
+2025-04-26,Expense,Misc,899.22
+2025-04-26,Revenue,Product Sales,4545.42
+2025-04-27,Expense,Rent,1701.71
+2025-04-27,Expense,Salaries,7993.5
+2025-04-28,Expense,Misc,1375.24
+2025-04-28,Expense,Marketing,1577.52
+2025-05-01,Revenue,Other Income,500
+2025-05-01,Expense,Misc,1632.83
+2025-05-02,Revenue,Product Sales,7857.05
+2025-05-02,Expense,Salaries,4891.04
+2025-05-03,Revenue,Service Fees,2771.2
+2025-05-03,Revenue,Service Fees,2844.96
+2025-05-03,Expense,Marketing,2379.0
+2025-05-03,Expense,Marketing,821.97
+2025-05-03,Revenue,Other Income,517.53
+2025-05-03,Revenue,Product Sales,8677.57
+2025-05-04,Revenue,Product Sales,8493.87
+2025-05-04,Expense,Utilities,310.61
+2025-05-05,Revenue,Service Fees,3049.92
+2025-05-05,Revenue,Other Income,592.87
+2025-05-05,Expense,Marketing,1454.91
+2025-05-05,Revenue,Service Fees,1579.35
+2025-05-05,Expense,Utilities,248.96
+2025-05-05,Revenue,Service Fees,1543.48
+2025-05-05,Expense,Rent,1572.77
+2025-05-06,Revenue,Service Fees,2017.42
+2025-05-06,Expense,Marketing,1932.38
+2025-05-06,Expense,Marketing,962.3
+2025-05-06,Revenue,Product Sales,11828.06
+2025-05-06,Expense,Utilities,392.7
+2025-05-07,Expense,Misc,1753.66
+2025-05-07,Revenue,Product Sales,2854.37
+2025-05-07,Expense,Utilities,429.74
+2025-05-07,Revenue,Service Fees,1715.87
+2025-05-08,Revenue,Service Fees,1744.33
+2025-05-08,Revenue,Product Sales,9622.88
+2025-05-08,Expense,Utilities,338.75
+2025-05-08,Revenue,Product Sales,11198.75
+2025-05-08,Expense,Misc,37973.63
+2025-05-08,Expense,Salaries,7817.92
+2025-05-08,Revenue,Service Fees,1571.98
+2025-05-09,Revenue,Product Sales,8717.15
+2025-05-09,Revenue,Other Income,500
+2025-05-10,Revenue,Service Fees,1761.38
+2025-05-10,Expense,Misc,1596.55
+2025-05-11,Revenue,Service Fees,2044.67
+2025-05-11,Expense,Misc,1411.74
+2025-05-11,Revenue,Service Fees,3132.19
+2025-05-12,Expense,Salaries,5649.38
+2025-05-12,Revenue,Service Fees,1181.03
+2025-05-13,Revenue,Other Income,567.73
+2025-05-13,Revenue,Service Fees,2496.07
+2025-05-13,Revenue,Service Fees,1616.87
+2025-05-13,Expense,Salaries,7050.78
+2025-05-13,Revenue,Other Income,681.69
+2025-05-13,Expense,Rent,1822.86
+2025-05-14,Expense,Rent,1567.9
+2025-05-14,Revenue,Service Fees,1577.1
+2025-05-14,Revenue,Other Income,509.48
+2025-05-14,Expense,Rent,724.49
+2025-05-14,Revenue,Other Income,500
+2025-05-15,Expense,COGS,14577.84
+2025-05-15,Revenue,Product Sales,10826.82
+2025-05-15,Expense,Salaries,5432.84
+2025-05-15,Expense,Utilities,368.64
+2025-05-15,Revenue,Service Fees,2221.43
+2025-05-15,Revenue,Service Fees,2495.55
+2025-05-15,Revenue,Other Income,730.02
+2025-05-16,Revenue,Service Fees,2686.85
+2025-05-16,Expense,Utilities,200
+2025-05-16,Expense,Marketing,1946.39
+2025-05-16,Expense,Salaries,9086.15
+2025-05-16,Revenue,Product Sales,13325.46
+2025-05-16,Expense,COGS,21087.73
+2025-05-17,Expense,Marketing,1902.48
+2025-05-17,Expense,Salaries,4444.19
+2025-05-17,Revenue,Product Sales,10261.41
+2025-05-17,Expense,Rent,2190.6
+2025-05-18,Revenue,Service Fees,2614.42
+2025-05-18,Expense,Salaries,7433.52
+2025-05-19,Expense,COGS,13948.05
+2025-05-20,Revenue,Product Sales,8784.15
+2025-05-20,Revenue,Product Sales,11222.4
+2025-05-20,Expense,COGS,24055.16
+2025-05-20,Revenue,Service Fees,1189.49
+2025-05-20,Expense,Marketing,1951.02
+2025-05-21,Revenue,Service Fees,2070.04
+2025-05-21,Revenue,Product Sales,9832.05
+2025-05-22,Revenue,Other Income,500
+2025-05-22,Expense,Utilities,407.96
+2025-05-22,Revenue,Service Fees,2303.36
+2025-05-22,Expense,Misc,1183.16
+2025-05-23,Revenue,Product Sales,6535.91
+2025-05-23,Revenue,Product Sales,4329.66
+2025-05-23,Expense,Salaries,5667.41
+2025-05-24,Expense,Salaries,5832.82
+2025-05-25,Revenue,Other Income,799.85
+2025-05-25,Expense,Utilities,279.31
+2025-05-26,Revenue,Product Sales,10906.62
+2025-05-26,Expense,Marketing,1847.46
+2025-05-26,Expense,Rent,1396.55
+2025-05-27,Expense,Utilities,231.72
+2025-05-28,Revenue,Other Income,500
+2025-05-28,Expense,Rent,1723.97
+2025-05-31,Expense,Marketing,2211.26
+2025-05-31,Expense,Salaries,9673.59
+2025-05-31,Expense,Salaries,8683.53
+2025-05-31,Revenue,Service Fees,3693.38
+2025-05-31,Expense,Marketing,1368.88
+2025-06-01,Expense,Utilities,497.36
+2025-06-01,Revenue,Service Fees,3417.5
+2025-06-01,Revenue,Service Fees,3828.57
+2025-06-01,Revenue,Other Income,500
+2025-06-02,Expense,Rent,1590.97
+2025-06-02,Expense,Marketing,1471.6
+2025-06-02,Expense,COGS,5347.31
+2025-06-02,Revenue,Other Income,500
+2025-06-03,Expense,Misc,550.33
+2025-06-03,Revenue,Other Income,500
+2025-06-03,Expense,Rent,1417.85
+2025-06-04,Expense,Utilities,522.83
+2025-06-04,Revenue,Product Sales,10248.24
+2025-06-05,Expense,Marketing,1400.98
+2025-06-05,Expense,Rent,1622.63
+2025-06-05,Expense,Misc,689.36
+2025-06-05,Expense,Salaries,5995.9
+2025-06-05,Expense,COGS,5925.31
+2025-06-06,Revenue,Other Income,500
+2025-06-07,Revenue,Product Sales,9284.02
+2025-06-07,Revenue,Other Income,500
+2025-06-07,Expense,Rent,1486.74
+2025-06-07,Expense,Misc,645.81
+2025-06-07,Expense,COGS,5664.98
+2025-06-08,Revenue,Other Income,500
+2025-06-08,Revenue,Service Fees,1687.5
+2025-06-08,Expense,Utilities,367.48
+2025-06-08,Expense,Salaries,6630.4
+2025-06-08,Revenue,Other Income,500
+2025-06-08,Revenue,Product Sales,11597.12
+2025-06-08,Expense,Marketing,1196.89
+2025-06-08,Expense,Utilities,483.49
+2025-06-08,Expense,COGS,3561.67
+2025-06-08,Revenue,Other Income,500
+2025-06-09,Revenue,Product Sales,10365.86
+2025-06-09,Expense,Salaries,8542.25
+2025-06-09,Revenue,Other Income,506.14
+2025-06-09,Revenue,Other Income,500
+2025-06-09,Expense,Misc,646.39
+2025-06-10,Expense,Salaries,7352.35
+2025-06-10,Revenue,Other Income,500
+2025-06-10,Revenue,Service Fees,1720.84
+2025-06-11,Revenue,Other Income,500
+2025-06-11,Revenue,Product Sales,9126.32
+2025-06-11,Revenue,Service Fees,1983.29
+2025-06-11,Revenue,Service Fees,3473.33
+2025-06-11,Revenue,Product Sales,9378.52
+2025-06-11,Revenue,Other Income,500
+2025-06-12,Revenue,Other Income,500
+2025-06-12,Expense,Marketing,1683.46
+2025-06-12,Revenue,Other Income,500
+2025-06-13,Revenue,Other Income,500
+2025-06-13,Expense,COGS,4789.73
+2025-06-13,Revenue,Product Sales,16841.67
+2025-06-14,Expense,Salaries,10215.65
+2025-06-14,Expense,Utilities,515.06
+2025-06-14,Expense,Misc,559.38
+2025-06-14,Revenue,Other Income,500
+2025-06-15,Expense,Rent,1929.05
+2025-06-15,Revenue,Other Income,500
+2025-06-15,Revenue,Product Sales,9748.65
+2025-06-15,Revenue,Service Fees,3630.85
+2025-06-16,Revenue,Product Sales,6658.69
+2025-06-16,Expense,Misc,538.78
+2025-06-16,Expense,COGS,6629.05
+2025-06-16,Expense,COGS,5705.02
+2025-06-17,Revenue,Service Fees,2262.37
+2025-06-18,Expense,Marketing,1625.16
+2025-06-18,Expense,Utilities,583.1
+2025-06-18,Revenue,Other Income,500
+2025-06-19,Revenue,Product Sales,10809.51
+2025-06-20,Revenue,Other Income,500
+2025-06-20,Revenue,Other Income,500
+2025-06-20,Expense,COGS,6591.83
+2025-06-20,Expense,Rent,1581.33
+2025-06-20,Expense,Salaries,6414.51
+2025-06-21,Revenue,Product Sales,8694.36
+2025-06-22,Expense,Misc,453.73
+2025-06-22,Expense,Utilities,609.64
+2025-06-22,Expense,Utilities,469.86
+2025-06-22,Expense,Misc,756.51
+2025-06-22,Expense,Rent,1435.77
+2025-06-22,Revenue,Product Sales,4144.42
+2025-06-23,Revenue,Service Fees,2850.05
+2025-06-24,Expense,Misc,515.57
+2025-06-24,Expense,Misc,570.99
+2025-06-24,Expense,Marketing,1474.85
+2025-06-24,Expense,Marketing,1158.58
+2025-06-24,Expense,COGS,7151.7
+2025-06-24,Revenue,Service Fees,4432.99
+2025-06-25,Revenue,Product Sales,14470.92
+2025-06-25,Expense,Rent,966.3
+2025-06-25,Expense,Misc,860.84
+2025-06-25,Expense,Marketing,1334.72
+2025-06-25,Revenue,Product Sales,8879.01
+2025-06-25,Revenue,Service Fees,2628.92
+2025-06-26,Revenue,Service Fees,2263.08
+2025-06-26,Expense,COGS,7777.93
+2025-06-26,Revenue,Service Fees,2520.09
+2025-06-27,Revenue,Service Fees,2937.82
+2025-06-27,Expense,Rent,1024.27
+2025-06-27,Expense,Marketing,770.0
+2025-06-27,Revenue,Service Fees,2777.92
+2025-06-27,Revenue,Product Sales,7966.68
+2025-06-30,Expense,Marketing,2359.1
+2025-06-30,Revenue,Product Sales,7037.65
+2025-06-30,Revenue,Service Fees,2367.65
+2025-07-01,Revenue,Other Income,522.76
+2025-07-01,Revenue,Other Income,500
+2025-07-01,Revenue,Other Income,500
+2025-07-03,Expense,Utilities,916.67
+2025-07-03,Expense,Rent,981.14
+2025-07-03,Expense,COGS,9156.36
+2025-07-04,Revenue,Service Fees,3372.85
+2025-07-04,Expense,Rent,856.0
+2025-07-04,Revenue,Service Fees,2955.97
+2025-07-05,Revenue,Service Fees,1149.27
+2025-07-05,Revenue,Other Income,500
+2025-07-07,Expense,COGS,9568.99
+2025-07-07,Expense,COGS,8803.68
+2025-07-08,Expense,Rent,1094.86
+2025-07-08,Revenue,Service Fees,3451.45
+2025-07-08,Expense,Salaries,10737.96
+2025-07-08,Revenue,Product Sales,10296.69
+2025-07-09,Revenue,Other Income,500
+2025-07-10,Expense,Salaries,13076.41
+2025-07-11,Expense,Marketing,2538.23
+2025-07-11,Revenue,Other Income,500
+2025-07-11,Expense,Salaries,14877.42
+2025-07-11,Revenue,Product Sales,9732.66
+2025-07-11,Expense,Misc,1094.79
+2025-07-11,Revenue,Service Fees,3771.17
+2025-07-11,Revenue,Product Sales,15900.21
+2025-07-12,Revenue,Other Income,500
+2025-07-12,Expense,Rent,1550.47
+2025-07-13,Expense,Marketing,2261.13
+2025-07-13,Revenue,Service Fees,3268.48
+2025-07-13,Expense,Rent,652.76
+2025-07-14,Revenue,Service Fees,2306.54
+2025-07-14,Revenue,Other Income,525.74
+2025-07-14,Revenue,Product Sales,11775.27
+2025-07-15,Revenue,Service Fees,3116.38
+2025-07-15,Expense,Rent,1011.05
+2025-07-15,Expense,Rent,1433.04
+2025-07-15,Expense,Utilities,788.04
+2025-07-15,Expense,Rent,750.47
+2025-07-16,Expense,COGS,8436.54
+2025-07-16,Revenue,Product Sales,7728.2
+2025-07-17,Revenue,Other Income,500
+2025-07-17,Revenue,Other Income,500
+2025-07-17,Expense,Marketing,2530.91
+2025-07-18,Revenue,Product Sales,13958.63
+2025-07-18,Revenue,Service Fees,3073.64
+2025-07-18,Expense,Marketing,1369.7
+2025-07-18,Revenue,Other Income,500
+2025-07-18,Expense,Rent,1260.23
+2025-07-19,Expense,Salaries,18062.67
+2025-07-19,Expense,COGS,10458.85
+2025-07-19,Revenue,Product Sales,10885.79
+2025-07-20,Expense,Utilities,824.87
+2025-07-20,Revenue,Service Fees,4670.18
+2025-07-20,Revenue,Service Fees,2751.21
+2025-07-20,Revenue,Service Fees,4194.81
+2025-07-21,Expense,Misc,27254.19
+2025-07-21,Expense,Misc,1449.6
+2025-07-21,Revenue,Service Fees,2512.66
+2025-07-22,Revenue,Other Income,500
+2025-07-22,Revenue,Other Income,500
+2025-07-22,Expense,Misc,1111.02
+2025-07-22,Expense,Misc,1186.89
+2025-07-23,Revenue,Product Sales,6736.92
+2025-07-24,Revenue,Product Sales,15664.03
+2025-07-24,Expense,COGS,7264.67
+2025-07-24,Revenue,Service Fees,2833.64
+2025-07-24,Expense,Utilities,838.94
+2025-07-25,Revenue,Product Sales,15125.64
+2025-07-25,Expense,Salaries,17330.79
+2025-07-25,Revenue,Service Fees,2422.82
+2025-07-25,Expense,COGS,8574.76
+2025-07-25,Revenue,Service Fees,3331.37
+2025-07-25,Expense,COGS,10719.29
+2025-07-25,Expense,Utilities,913.76
+2025-07-26,Revenue,Product Sales,9092.77
+2025-07-26,Revenue,Other Income,515.04
+2025-07-26,Revenue,Other Income,500
+2025-07-27,Expense,Marketing,2732.39
+2025-07-27,Expense,Misc,605.13
+2025-07-27,Revenue,Service Fees,3515.36
+2025-07-27,Revenue,Product Sales,14653.93
+2025-07-30,Expense,Salaries,6070.77
+2025-07-30,Revenue,Service Fees,1528.16
+2025-07-31,Revenue,Service Fees,1650.77
+2025-07-31,Expense,Rent,2205.96
+2025-07-31,Expense,COGS,15576.61
+2025-08-01,Expense,Misc,866.92
+2025-08-01,Revenue,Product Sales,7009.39
+2025-08-01,Expense,Misc,467.48
+2025-08-01,Revenue,Other Income,500
+2025-08-02,Expense,Salaries,9641.5
+2025-08-02,Revenue,Service Fees,1964.58
+2025-08-02,Expense,Marketing,3271.6
+2025-08-03,Expense,Misc,639.55
+2025-08-03,Revenue,Product Sales,7265.02
+2025-08-04,Revenue,Product Sales,12319.72
+2025-08-04,Revenue,Other Income,500
+2025-08-04,Revenue,Product Sales,10606.65
+2025-08-06,Expense,Rent,3039.34
+2025-08-07,Revenue,Other Income,500
+2025-08-07,Expense,Salaries,6129.38
+2025-08-07,Expense,Rent,3462.81
+2025-08-07,Expense,Misc,803.48
+2025-08-07,Expense,Rent,2953.9
+2025-08-07,Revenue,Service Fees,3180.69
+2025-08-07,Revenue,Service Fees,3087.76
+2025-08-07,Revenue,Service Fees,2703.32
+2025-08-07,Revenue,Product Sales,5949.11
+2025-08-08,Expense,Marketing,4740.06
+2025-08-08,Revenue,Other Income,500
+2025-08-08,Revenue,Product Sales,5636.93
+2025-08-09,Revenue,Other Income,500
+2025-08-09,Revenue,Service Fees,1053.49
+2025-08-09,Revenue,Other Income,500
+2025-08-10,Expense,Utilities,639.28
+2025-08-10,Revenue,Service Fees,4238.88
+2025-08-10,Expense,Misc,863.89
+2025-08-11,Expense,COGS,18909.74
+2025-08-11,Revenue,Other Income,525.02
+2025-08-12,Expense,Salaries,4992.02
+2025-08-12,Revenue,Product Sales,5826.3
+2025-08-12,Revenue,Product Sales,9670.63
+2025-08-13,Expense,Misc,965.07
+2025-08-13,Revenue,Other Income,500
+2025-08-13,Expense,COGS,19500.97
+2025-08-13,Revenue,Service Fees,2136.62
+2025-08-13,Revenue,Product Sales,13674.78
+2025-08-14,Expense,COGS,15240.47
+2025-08-14,Expense,Utilities,739.55
+2025-08-15,Revenue,Product Sales,9953.48
+2025-08-15,Revenue,Service Fees,4978.69
+2025-08-16,Expense,Salaries,7425.25
+2025-08-16,Revenue,Product Sales,6259.98
+2025-08-19,Revenue,Other Income,500
+2025-08-19,Revenue,Other Income,500
+2025-08-19,Revenue,Service Fees,2375.63
+2025-08-19,Revenue,Service Fees,3249.17
+2025-08-20,Revenue,Other Income,500
+2025-08-20,Revenue,Product Sales,6402.56
+2025-08-20,Expense,Salaries,9485.92
+2025-08-20,Revenue,Service Fees,3058.1
+2025-08-20,Revenue,Service Fees,5155.0
+2025-08-20,Revenue,Service Fees,2310.66
+2025-08-21,Expense,Utilities,529.77
+2025-08-21,Revenue,Other Income,500
+2025-08-21,Expense,Utilities,584.92
+2025-08-22,Expense,Marketing,4965.54
+2025-08-22,Expense,Marketing,3880.7
+2025-08-22,Revenue,Product Sales,6936.17
+2025-08-23,Expense,Utilities,1056.84
+2025-08-23,Expense,Utilities,524.83
+2025-08-23,Revenue,Other Income,500
+2025-08-23,Revenue,Other Income,500
+2025-08-23,Revenue,Product Sales,10672.88
+2025-08-24,Revenue,Product Sales,10637.03
+2025-08-24,Revenue,Service Fees,3944.31
+2025-08-24,Revenue,Product Sales,6239.23
+2025-08-25,Revenue,Product Sales,9942.6
+2025-08-25,Revenue,Other Income,500
+2025-08-25,Expense,Salaries,8097.21
+2025-08-25,Expense,Salaries,3239.02
+2025-08-25,Revenue,Service Fees,2340.96
+2025-08-26,Expense,Misc,658.67
+2025-08-26,Revenue,Product Sales,4224.29
+2025-08-26,Revenue,Product Sales,4626.48
+2025-08-29,Revenue,Other Income,500
+2025-08-29,Expense,Utilities,200
+2025-08-29,Revenue,Product Sales,10450.34
+2025-08-29,Expense,Rent,1031.02
+2025-08-29,Expense,Rent,1299.21
+2025-08-29,Revenue,Service Fees,2358.03
+2025-08-29,Expense,Salaries,8455.6
+2025-08-30,Revenue,Service Fees,3478.95
+2025-08-30,Expense,Rent,1361.72
+2025-08-31,Revenue,Product Sales,15181.4
+2025-08-31,Revenue,Other Income,500
+2025-08-31,Expense,Salaries,8116.22
+2025-08-31,Expense,Marketing,3439.3
+2025-09-01,Revenue,Service Fees,2475.72
+2025-09-01,Expense,Utilities,294.9
+2025-09-01,Expense,Marketing,2115.54
+2025-09-01,Revenue,Other Income,500
+2025-09-01,Expense,COGS,11181.49
+2025-09-01,Revenue,Service Fees,2990.22
+2025-09-01,Revenue,Service Fees,3166.34
+2025-09-01,Revenue,Service Fees,2369.4
+2025-09-02,Revenue,Product Sales,15914.09
+2025-09-03,Expense,Salaries,9875.65
+2025-09-03,Revenue,Service Fees,3118.79
+2025-09-04,Revenue,Other Income,500
+2025-09-04,Expense,Marketing,2364.44
+2025-09-04,Revenue,Other Income,500
+2025-09-05,Revenue,Service Fees,1193.86
+2025-09-05,Expense,Misc,38279.25
+2025-09-05,Expense,Misc,753.75
+2025-09-05,Expense,COGS,7889.41
+2025-09-05,Revenue,Service Fees,3242.52
+2025-09-06,Revenue,Other Income,500
+2025-09-06,Revenue,Other Income,500
+2025-09-06,Expense,Utilities,493.74
+2025-09-07,Revenue,Product Sales,4678.78
+2025-09-07,Expense,COGS,12619.15
+2025-09-07,Revenue,Other Income,500
+2025-09-08,Revenue,Service Fees,1876.99
+2025-09-08,Expense,Utilities,504.91
+2025-09-08,Expense,COGS,9252.31
+2025-09-08,Expense,Utilities,433.91
+2025-09-08,Expense,Rent,1869.77
+2025-09-08,Revenue,Other Income,500
+2025-09-08,Revenue,Other Income,500
+2025-09-09,Revenue,Other Income,500
+2025-09-09,Revenue,Other Income,500
+2025-09-09,Revenue,Other Income,500
+2025-09-09,Revenue,Other Income,500
+2025-09-10,Expense,Marketing,4193.69
+2025-09-10,Expense,Marketing,1885.83
+2025-09-10,Revenue,Other Income,500
+2025-09-10,Expense,COGS,8232.85
+2025-09-11,Expense,Misc,1179.28
+2025-09-11,Expense,Rent,1419.5
+2025-09-11,Revenue,Service Fees,2346.38
+2025-09-11,Expense,Misc,1220.83
+2025-09-11,Expense,Misc,1334.17
+2025-09-11,Revenue,Product Sales,11418.85
+2025-09-12,Revenue,Other Income,500
+2025-09-12,Expense,Salaries,8853.12
+2025-09-12,Revenue,Service Fees,2954.41
+2025-09-13,Revenue,Service Fees,2657.07
+2025-09-13,Revenue,Other Income,500
+2025-09-14,Expense,Rent,1391.75
+2025-09-14,Expense,Salaries,10343.95
+2025-09-15,Expense,Rent,1667.7
+2025-09-15,Revenue,Product Sales,13596.78
+2025-09-15,Expense,Rent,1613.29
+2025-09-15,Revenue,Other Income,500
+2025-09-15,Expense,Utilities,366.23
+2025-09-15,Expense,Utilities,219.11
+2025-09-15,Expense,Utilities,308.81
+2025-09-15,Expense,Utilities,420.22
+2025-09-16,Expense,Salaries,10121.35
+2025-09-16,Revenue,Service Fees,2314.32
+2025-09-16,Revenue,Product Sales,10517.96
+2025-09-17,Revenue,Product Sales,9628.49
+2025-09-17,Revenue,Service Fees,1406.39
+2025-09-17,Revenue,Product Sales,8953.71
+2025-09-17,Expense,Rent,1322.46
+2025-09-17,Expense,COGS,15994.77
+2025-09-18,Revenue,Service Fees,1854.36
+2025-09-18,Revenue,Other Income,500
+2025-09-19,Revenue,Product Sales,7965.71
+2025-09-19,Revenue,Other Income,500
+2025-09-19,Expense,COGS,7211.83
+2025-09-19,Revenue,Service Fees,1832.09
+2025-09-20,Expense,Utilities,389.75
+2025-09-20,Expense,COGS,9155.88
+2025-09-20,Revenue,Service Fees,2102.08
+2025-09-20,Expense,Salaries,8284.56
+2025-09-20,Expense,Salaries,6491.91
+2025-09-21,Revenue,Service Fees,2669.99
+2025-09-22,Revenue,Other Income,500
+2025-09-22,Expense,Misc,595.24
+2025-09-22,Revenue,Product Sales,13684.29
+2025-09-22,Revenue,Other Income,500
+2025-09-22,Revenue,Service Fees,3445.28
+2025-09-23,Expense,Utilities,235.21
+2025-09-23,Revenue,Product Sales,12773.77
+2025-09-23,Revenue,Product Sales,8116.64
+2025-09-24,Revenue,Other Income,500
+2025-09-25,Expense,Misc,1315.93
+2025-09-25,Revenue,Product Sales,14486.98
+2025-09-25,Revenue,Other Income,500
+2025-09-28,Expense,COGS,11028.94
+2025-09-28,Expense,Rent,1365.74
+2025-09-28,Revenue,Product Sales,5696.85
+2025-09-28,Revenue,Other Income,500
+2025-09-28,Expense,Misc,837.74
+2025-09-28,Revenue,Product Sales,14182.04
+2025-09-28,Expense,Rent,1303.87
+2025-09-29,Revenue,Product Sales,5163.2
+2025-09-30,Revenue,Service Fees,3307.46
+2025-09-30,Expense,Salaries,10227.66
+2025-10-01,Revenue,Product Sales,11858.18
+2025-10-01,Revenue,Other Income,586.55
+2025-10-01,Revenue,Product Sales,7377.58
+2025-10-02,Revenue,Service Fees,1008.13
+2025-10-02,Revenue,Other Income,500
+2025-10-02,Expense,COGS,8625.77
+2025-10-02,Expense,Salaries,9002.62
+2025-10-03,Revenue,Service Fees,4335.65
+2025-10-03,Revenue,Service Fees,3412.98
+2025-10-03,Revenue,Product Sales,9887.6
+2025-10-03,Revenue,Service Fees,3490.19
+2025-10-03,Expense,Utilities,200
+2025-10-04,Revenue,Product Sales,15020.08
+2025-10-04,Revenue,Service Fees,2665.83
+2025-10-04,Expense,Utilities,595.57
+2025-10-04,Expense,COGS,7176.31
+2025-10-05,Revenue,Product Sales,10544.96
+2025-10-05,Revenue,Service Fees,1779.17
+2025-10-06,Revenue,Product Sales,7233.31
+2025-10-06,Expense,COGS,13152.39
+2025-10-06,Expense,Misc,798.62
+2025-10-06,Expense,Utilities,586.03
+2025-10-06,Revenue,Service Fees,3808.54
+2025-10-07,Expense,Misc,999.1
+2025-10-07,Expense,Marketing,3370.91
+2025-10-07,Revenue,Other Income,500
+2025-10-07,Expense,Misc,764.95
+2025-10-08,Revenue,Service Fees,1730.85
+2025-10-09,Expense,COGS,7388.41
+2025-10-09,Revenue,Other Income,618.17
+2025-10-09,Expense,Salaries,6156.95
+2025-10-10,Expense,Rent,2034.21
+2025-10-10,Expense,Rent,1757.67
+2025-10-10,Revenue,Other Income,555.72
+2025-10-10,Expense,Salaries,8821.67
+2025-10-10,Expense,Misc,622.22
+2025-10-10,Revenue,Service Fees,1921.0
+2025-10-10,Expense,Salaries,5344.6
+2025-10-11,Expense,Utilities,785.62
+2025-10-11,Expense,Misc,615.8
+2025-10-11,Expense,Utilities,355.13
+2025-10-12,Revenue,Other Income,500
+2025-10-12,Expense,Utilities,950.11
+2025-10-12,Revenue,Service Fees,3785.56
+2025-10-12,Expense,COGS,13952.41
+2025-10-12,Revenue,Other Income,500
+2025-10-13,Revenue,Service Fees,2691.46
+2025-10-14,Revenue,Other Income,500
+2025-10-15,Expense,Rent,2445.58
+2025-10-16,Revenue,Service Fees,3210.51
+2025-10-16,Revenue,Product Sales,8782.5
+2025-10-16,Expense,Salaries,8045.61
+2025-10-16,Expense,Salaries,5817.52
+2025-10-16,Expense,Marketing,2416.56
+2025-10-17,Revenue,Product Sales,4164.62
+2025-10-17,Revenue,Service Fees,3445.75
+2025-10-17,Revenue,Other Income,590.78
+2025-10-18,Expense,Misc,515.04
+2025-10-18,Expense,Marketing,2136.33
+2025-10-18,Revenue,Service Fees,1946.64
+2025-10-18,Expense,Utilities,424.02
+2025-10-18,Revenue,Other Income,500
+2025-10-19,Revenue,Service Fees,3450.53
+2025-10-19,Expense,Misc,974.86
+2025-10-19,Expense,Rent,1105.66
+2025-10-20,Expense,Rent,1564.53
+2025-10-20,Revenue,Product Sales,8765.32
+2025-10-21,Revenue,Other Income,500
+2025-10-22,Revenue,Other Income,500
+2025-10-22,Expense,Marketing,4319.32
+2025-10-23,Revenue,Product Sales,11941.72
+2025-10-24,Revenue,Other Income,500
+2025-10-24,Revenue,Service Fees,1053.88
+2025-10-25,Revenue,Product Sales,5748.64
+2025-10-25,Revenue,Product Sales,7996.51
+2025-10-25,Expense,Salaries,11929.57
+2025-10-25,Revenue,Product Sales,4776.18
+2025-10-25,Revenue,Other Income,739.47
+2025-10-25,Expense,COGS,8699.74
+2025-10-28,Expense,COGS,9342.41
+2025-10-28,Revenue,Product Sales,8004.28
+2025-10-28,Expense,Misc,813.74
+2025-10-28,Expense,COGS,9519.43
+2025-10-28,Revenue,Product Sales,9277.32
+2025-10-29,Revenue,Product Sales,8252.82
+2025-10-29,Expense,Rent,916.78
+2025-10-29,Expense,Utilities,283.84
+2025-10-29,Expense,Utilities,298.93
+2025-10-30,Revenue,Service Fees,2830.81
+2025-10-30,Revenue,Service Fees,5333.47
+2025-10-30,Expense,COGS,7385.13
+2025-10-31,Expense,Rent,1368.27
+2025-10-31,Revenue,Product Sales,6965.55
+2025-10-31,Expense,Rent,1274.25
+2025-10-31,Revenue,Product Sales,11494.52
+2025-10-31,Revenue,Other Income,500
+2025-11-01,Revenue,Other Income,500
+2025-11-02,Expense,Marketing,1461.35
+2025-11-02,Revenue,Service Fees,4018.66
+2025-11-02,Expense,Misc,541.99
+2025-11-02,Revenue,Service Fees,4022.64
+2025-11-02,Revenue,Service Fees,5488.08
+2025-11-02,Revenue,Service Fees,4425.23
+2025-11-03,Expense,COGS,5229.8
+2025-11-03,Expense,Salaries,6011.09
+2025-11-03,Revenue,Other Income,500
+2025-11-03,Revenue,Service Fees,2260.5
+2025-11-04,Expense,Utilities,280.72
+2025-11-04,Expense,Utilities,485.61
+2025-11-04,Expense,Misc,946.25
+2025-11-04,Expense,COGS,2292.34
+2025-11-04,Revenue,Product Sales,12267.04
+2025-11-04,Revenue,Other Income,501.92
+2025-11-05,Expense,COGS,4960.31
+2025-11-05,Expense,Misc,527.01
+2025-11-06,Revenue,Product Sales,11745.72
+2025-11-06,Revenue,Service Fees,4391.3
+2025-11-06,Expense,Rent,1211.78
+2025-11-06,Revenue,Product Sales,9093.71
+2025-11-07,Expense,Rent,1236.31
+2025-11-07,Expense,Salaries,5897.75
+2025-11-07,Revenue,Service Fees,2853.26
+2025-11-07,Revenue,Product Sales,8263.12
+2025-11-07,Expense,Marketing,949.71
+2025-11-07,Expense,Salaries,4969.11
+2025-11-08,Expense,COGS,6807.71
+2025-11-08,Expense,COGS,9514.01
+2025-11-08,Expense,Salaries,7120.23
+2025-11-09,Expense,Salaries,6989.34
+2025-11-09,Expense,Marketing,1944.96
+2025-11-09,Expense,Marketing,1675.5
+2025-11-09,Expense,Utilities,269.55
+2025-11-09,Expense,Misc,655.58
+2025-11-09,Revenue,Other Income,567.54
+2025-11-10,Revenue,Other Income,500
+2025-11-10,Expense,Marketing,1827.28
+2025-11-10,Revenue,Service Fees,2894.75
+2025-11-11,Revenue,Product Sales,8173.66
+2025-11-11,Expense,Misc,735.24
+2025-11-11,Expense,Utilities,384.31
+2025-11-12,Revenue,Product Sales,6824.98
+2025-11-12,Expense,Utilities,463.94
+2025-11-12,Expense,Salaries,7451.26
+2025-11-12,Revenue,Other Income,500
+2025-11-12,Revenue,Other Income,500
+2025-11-12,Expense,Misc,856.22
+2025-11-12,Revenue,Other Income,500
+2025-11-12,Expense,Utilities,461.67
+2025-11-13,Expense,Rent,1276.79
+2025-11-13,Expense,Salaries,5108.0
+2025-11-13,Expense,Rent,944.21
+2025-11-14,Revenue,Other Income,500
+2025-11-14,Revenue,Service Fees,2266.13
+2025-11-14,Revenue,Other Income,500
+2025-11-15,Expense,Rent,769.63
+2025-11-16,Expense,Utilities,286.26
+2025-11-16,Expense,Rent,1358.34
+2025-11-16,Expense,Misc,721.68
+2025-11-16,Revenue,Service Fees,4831.72
+2025-11-17,Revenue,Service Fees,3305.19
+2025-11-17,Expense,Misc,510.34
+2025-11-17,Expense,Marketing,1108.98
+2025-11-17,Expense,Marketing,1841.39
+2025-11-17,Expense,Salaries,6001.37
+2025-11-18,Expense,Utilities,285.31
+2025-11-18,Revenue,Product Sales,6437.21
+2025-11-18,Expense,Marketing,1514.81
+2025-11-18,Expense,Salaries,4255.64
+2025-11-18,Expense,Salaries,5826.45
+2025-11-18,Revenue,Other Income,511.97
+2025-11-19,Revenue,Other Income,669.34
+2025-11-20,Expense,Marketing,1952.71
+2025-11-20,Revenue,Other Income,500
+2025-11-20,Expense,COGS,6039.58
+2025-11-21,Revenue,Product Sales,6823.77
+2025-11-21,Revenue,Other Income,500
+2025-11-21,Revenue,Other Income,500
+2025-11-21,Revenue,Product Sales,8395.55
+2025-11-21,Revenue,Product Sales,10867.52
+2025-11-21,Expense,COGS,7990.18
+2025-11-22,Revenue,Product Sales,7750.99
+2025-11-23,Revenue,Other Income,500
+2025-11-24,Expense,COGS,4624.97
+2025-11-24,Revenue,Service Fees,4339.82
+2025-11-24,Expense,Utilities,327.75
+2025-11-27,Revenue,Product Sales,8641.02
+2025-11-27,Expense,Misc,719.91
+2025-11-27,Expense,Salaries,13045.85
+2025-11-28,Revenue,Product Sales,9332.04
+2025-11-28,Expense,Rent,1717.5
+2025-11-28,Revenue,Product Sales,5002.24
+2025-11-29,Expense,Misc,961.31
+2025-11-30,Revenue,Other Income,523.91
+2025-11-30,Expense,Rent,1872.74
+2025-11-30,Revenue,Service Fees,3222.78
+2025-11-30,Revenue,Service Fees,1716.17
+2025-12-01,Revenue,Service Fees,4007.61
+2025-12-01,Expense,Misc,1151.91
+2025-12-01,Revenue,Product Sales,7420.7
+2025-12-01,Expense,Misc,596.33
+2025-12-02,Expense,Salaries,8062.06
+2025-12-02,Expense,Misc,751.45
+2025-12-02,Expense,Rent,1442.28
+2025-12-02,Revenue,Other Income,500
+2025-12-02,Revenue,Product Sales,7437.89
+2025-12-02,Revenue,Service Fees,2956.52
+2025-12-02,Expense,Misc,1345.62
+2025-12-02,Revenue,Other Income,500
+2025-12-03,Expense,Utilities,957.88
+2025-12-03,Revenue,Product Sales,9389.46
+2025-12-03,Revenue,Other Income,500
+2025-12-03,Revenue,Other Income,500
+2025-12-03,Revenue,Other Income,548.6
+2025-12-04,Expense,Salaries,12832.68
+2025-12-04,Revenue,Product Sales,7798.72
+2025-12-04,Revenue,Service Fees,4836.5
+2025-12-04,Revenue,Other Income,500
+2025-12-05,Revenue,Product Sales,12654.89
+2025-12-05,Expense,Rent,1446.5
+2025-12-05,Revenue,Service Fees,2437.8
+2025-12-06,Expense,Rent,1557.14
+2025-12-06,Expense,Marketing,2085.98
+2025-12-06,Expense,Utilities,783.12
+2025-12-06,Expense,Marketing,2023.15
+2025-12-06,Expense,Utilities,645.46
+2025-12-06,Expense,Rent,988.19
+2025-12-07,Revenue,Product Sales,10426.54
+2025-12-08,Expense,Marketing,2932.67
+2025-12-08,Revenue,Product Sales,7332.72
+2025-12-08,Revenue,Product Sales,8148.08
+2025-12-08,Expense,COGS,16342.62
+2025-12-09,Revenue,Service Fees,2000.82
+2025-12-09,Revenue,Service Fees,3132.41
+2025-12-09,Revenue,Other Income,500
+2025-12-10,Revenue,Service Fees,4475.69
+2025-12-10,Expense,Marketing,2919.62
+2025-12-10,Revenue,Other Income,500
+2025-12-11,Revenue,Other Income,500
+2025-12-13,Revenue,Service Fees,3727.41
+2025-12-14,Expense,Misc,1028.12
+2025-12-15,Expense,Rent,682.19
+2025-12-15,Revenue,Service Fees,2677.4
+2025-12-15,Revenue,Other Income,500
+2025-12-16,Expense,COGS,13014.79
+2025-12-16,Expense,Marketing,1348.26
+2025-12-16,Revenue,Product Sales,9325.12
+2025-12-16,Expense,Rent,1551.59
+2025-12-16,Revenue,Other Income,500
+2025-12-16,Revenue,Service Fees,3882.82
+2025-12-17,Revenue,Product Sales,14584.38
+2025-12-17,Revenue,Service Fees,3086.11
+2025-12-18,Revenue,Product Sales,10559.82
+2025-12-18,Revenue,Service Fees,2209.61
+2025-12-18,Expense,Utilities,1245.28
+2025-12-19,Revenue,Other Income,500
+2025-12-20,Revenue,Product Sales,6054.36
+2025-12-20,Revenue,Product Sales,8180.41
+2025-12-20,Expense,Rent,1014.46
+2025-12-20,Expense,Rent,1117.03
+2025-12-20,Revenue,Other Income,500
+2025-12-21,Expense,COGS,15789.83
+2025-12-21,Expense,COGS,9620.39
+2025-12-21,Expense,COGS,16997.52
+2025-12-22,Expense,Salaries,14332.75
+2025-12-22,Expense,COGS,16391.13
+2025-12-23,Expense,Salaries,11690.27
+2025-12-23,Revenue,Other Income,500
+2025-12-24,Revenue,Product Sales,11154.59
+2025-12-24,Expense,Marketing,2556.44
+2025-13-45,Revenue,Product Sales,5000
