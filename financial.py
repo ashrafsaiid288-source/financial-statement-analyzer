@@ -1,3 +1,5 @@
+import re
+import difflib
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -118,30 +120,262 @@ def get_demo_data():
     final_df["date"] = pd.to_datetime(final_df["date"])
     return final_df.sort_values("date").reset_index(drop=True)
 
+
+# =====================================================================================
+# SMART COLUMN DETECTION
+# بدل ما نطلب أعمدة ثابتة (date, type, category, amount) بالاسم الحرفي،
+# بنحاول نكتشفها تلقائيًا من أي اسم قريب (إنجليزي أو عربي)، ولو فشلنا بنسيب
+# اليوزر يربط الأعمدة يدويًا من قائمة منسدلة.
+# =====================================================================================
+
+COLUMN_ALIASES = {
+    "date": ["date", "transaction date", "transactiondate", "trans_date", "day",
+             "posting date", "التاريخ", "تاريخ"],
+    "type": ["type", "transaction type", "kind", "flow", "direction", "نوع", "النوع",
+             "نوع العملية"],
+    "category": ["category", "cat", "subcategory", "description", "desc", "account",
+                 "label", "الفئة", "فئة", "التصنيف", "الوصف"],
+    "amount": ["amount", "value", "amt", "total", "sum", "price", "قيمة", "المبلغ",
+               "مبلغ", "القيمة"],
+}
+
+TYPE_VALUE_ALIASES = {
+    "Revenue": ["revenue", "income", "credit", "in", "sale", "sales", "deposit",
+                "دخل", "إيراد", "ايراد", "وارد"],
+    "Expense": ["expense", "cost", "debit", "out", "expenditure", "outflow",
+                "مصروف", "مصاريف", "منصرف", "صادر"],
+}
+
+
+def _normalize(s: str) -> str:
+    return re.sub(r"[^a-z0-9\u0600-\u06FF]", "", str(s).strip().lower())
+
+
+def auto_map_columns(df: pd.DataFrame) -> dict:
+    """Try to map each raw column in df to one of our standard names
+    (date/type/category/amount) using exact alias matches first, then
+    fuzzy string matching as a fallback. Returns {standard_name: raw_col or None}."""
+    raw_cols = list(df.columns)
+    normalized_lookup = {_normalize(c): c for c in raw_cols}
+
+    mapping = {}
+    used_raw_cols = set()
+
+    # Pass 1: exact alias matches
+    for standard, aliases in COLUMN_ALIASES.items():
+        found = None
+        for alias in aliases:
+            key = _normalize(alias)
+            if key in normalized_lookup and normalized_lookup[key] not in used_raw_cols:
+                found = normalized_lookup[key]
+                break
+        if found:
+            mapping[standard] = found
+            used_raw_cols.add(found)
+        else:
+            mapping[standard] = None
+
+    # Pass 2: fuzzy matching for anything still unmapped
+    remaining_cols = [c for c in raw_cols if c not in used_raw_cols]
+    for standard, raw_col in mapping.items():
+        if raw_col is not None or not remaining_cols:
+            continue
+        all_aliases = COLUMN_ALIASES[standard] + [standard]
+        best_match, best_score = None, 0.0
+        for col in remaining_cols:
+            for alias in all_aliases:
+                score = difflib.SequenceMatcher(None, _normalize(col), _normalize(alias)).ratio()
+                if score > best_score:
+                    best_match, best_score = col, score
+        if best_match and best_score >= 0.72:
+            mapping[standard] = best_match
+            used_raw_cols.add(best_match)
+            remaining_cols = [c for c in raw_cols if c not in used_raw_cols]
+
+    return mapping
+
+
+def looks_like_period_header(col_name: str) -> bool:
+    """Detects headers like '2024', 'Jan-2026', 'Q1 2025', '01/2026' that
+    indicate a 'wide' financial statement layout (one column per period)."""
+    s = str(col_name).strip()
+    patterns = [
+        r"^\d{4}$",                                   # 2024
+        r"^(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*[\-/ ]\d{2,4}$",  # Jan-2026
+        r"^q[1-4][\-/ ]?\d{2,4}$",                     # Q1-2025
+        r"^\d{1,2}[\-/]\d{4}$",                        # 01/2026
+    ]
+    return any(re.match(p, s, flags=re.IGNORECASE) for p in patterns)
+
+
+def melt_wide_format(df: pd.DataFrame, id_cols: list, period_cols: list) -> pd.DataFrame:
+    """Converts a 'wide' statement (one column per period) into the long
+    transaction format the app needs (date, type, category, amount)."""
+    melted = df.melt(id_vars=id_cols, value_vars=period_cols,
+                      var_name="period", value_name="amount")
+    melted["date"] = pd.to_datetime(melted["period"], errors="coerce")
+    # لو مقدرش يفهم التاريخ من العمود (زي "2024" لوحدها)، حاول يضيف يناير كبداية للسنة
+    still_bad = melted["date"].isna()
+    if still_bad.any():
+        melted.loc[still_bad, "date"] = pd.to_datetime(
+            melted.loc[still_bad, "period"].astype(str) + "-01-01", errors="coerce"
+        )
+    return melted
+
+
+def normalize_type_values(series: pd.Series) -> tuple[pd.Series, list]:
+    """Maps arbitrary 'type' text (income/دخل/credit/...) to Revenue/Expense.
+    Returns the normalized series plus a list of values it could not classify."""
+    def classify(val):
+        v = _normalize(val)
+        if v in ("revenue", "expense"):
+            return "Revenue" if v == "revenue" else "Expense"
+        for standard, aliases in TYPE_VALUE_ALIASES.items():
+            if any(_normalize(a) in v or v in _normalize(a) for a in aliases):
+                return standard
+        return None
+
+    normalized = series.astype(str).map(classify)
+    unclassified = sorted(series[normalized.isna()].astype(str).unique().tolist())
+    return normalized, unclassified
+
+
 @st.cache_data
-def load_uploaded_data(uploaded_file):
-    df = pd.read_csv(uploaded_file)
-    df.columns = [col.strip().lower() for col in df.columns]
-    return df
+def read_raw_csv(uploaded_file):
+    return pd.read_csv(uploaded_file)
+
 
 st.sidebar.markdown("## Control Panel")
 source = st.sidebar.radio("Select Data Source:", ["Use Demo Data", "Upload CSV File"])
 
-cols_needed = {"date", "type", "category", "amount"}
+STANDARD_COLS = ["date", "type", "category", "amount"]
+VALID_TYPES = {"Revenue", "Expense"}
 
 if source == "Upload CSV File":
     file = st.sidebar.file_uploader("Upload Financial CSV", type=["csv"])
-    if file is not None:
-        df = load_uploaded_data(file)
-        if not cols_needed.issubset(df.columns):
-            st.sidebar.error(f"Error: Missing columns. Expected: {cols_needed}")
-            st.stop()
-        df["date"] = pd.to_datetime(df["date"], errors="coerce")
-        df["amount"] = pd.to_numeric(df["amount"], errors="coerce")
-        df = df.dropna(subset=["date", "amount"])
-        df["type"] = df["type"].str.strip().str.title()
-    else:
+    if file is None:
         st.sidebar.info("Upload a CSV file to start.")
+        st.stop()
+
+    raw_df = read_raw_csv(file)
+
+    st.sidebar.markdown("---")
+    st.sidebar.markdown("### Column Mapping")
+
+    auto_mapping = auto_map_columns(raw_df)
+
+    # لو مفيش عمود amount ولا date ظاهر، وفي عناوين شكلها فترات زمنية (سنين/شهور)،
+    # يبقى الملف على الأرجح "عريض" (قايمة دخل تقليدية) مش "طويل" (transactions).
+    wide_period_cols = [c for c in raw_df.columns if looks_like_period_header(c)]
+    is_probably_wide = (auto_mapping.get("amount") is None
+                         and auto_mapping.get("date") is None
+                         and len(wide_period_cols) >= 2)
+
+    working_df = None
+
+    if is_probably_wide:
+        st.sidebar.info(
+            "الملف ده شكله 'عريض' (كل عمود = سنة/شهر). هنحوّله تلقائيًا لصيغة معاملات."
+        )
+        non_period_cols = [c for c in raw_df.columns if c not in wide_period_cols]
+        id_cols = st.sidebar.multiselect(
+            "اختر عمود/أعمدة الوصف (زي Category أو Item)",
+            options=non_period_cols,
+            default=non_period_cols[:1] if non_period_cols else []
+        )
+        chosen_periods = st.sidebar.multiselect(
+            "اختر أعمدة الفترات الزمنية (سنين/شهور)",
+            options=wide_period_cols,
+            default=wide_period_cols
+        )
+        if not id_cols or not chosen_periods:
+            st.sidebar.warning("اختار على الأقل عمود وصف وعمود فترة واحد عشان نكمل.")
+            st.stop()
+
+        melted = melt_wide_format(raw_df, id_cols, chosen_periods)
+        # في الشكل العريض مفيش عمود "type" غالبًا، فبنسيب اليوزر يحدد الفئات
+        # اللي تعتبر Revenue واللي تعتبر Expense.
+        desc_col = id_cols[0]
+        all_items = sorted(melted[desc_col].astype(str).unique().tolist())
+        st.sidebar.markdown("#### حدد نوع كل بند")
+        revenue_items = st.sidebar.multiselect(
+            "دي بنود إيرادات (Revenue)", options=all_items,
+            default=[i for i in all_items if re.search(r"revenue|sale|income|إيراد|دخل", i, re.I)]
+        )
+        expense_items = [i for i in all_items if i not in revenue_items]
+
+        melted["type"] = np.where(melted[desc_col].astype(str).isin(revenue_items), "Revenue", "Expense")
+        melted["category"] = melted[desc_col]
+        working_df = melted[["date", "type", "category", "amount"]].copy()
+
+    else:
+        missing = [c for c in STANDARD_COLS if auto_mapping.get(c) is None]
+        if missing:
+            st.sidebar.warning(
+                "معرفناش نلاقي كل الأعمدة المطلوبة تلقائيًا. اربط الأعمدة يدويًا:"
+            )
+            for col in missing:
+                choice = st.sidebar.selectbox(
+                    f"العمود اللي يمثل '{col}'",
+                    options=["-- اختر --"] + list(raw_df.columns),
+                    key=f"map_{col}"
+                )
+                if choice != "-- اختر --":
+                    auto_mapping[col] = choice
+
+        still_missing = [c for c in STANDARD_COLS if auto_mapping.get(c) is None]
+        if still_missing:
+            st.sidebar.error(f"لسه ناقص ربط الأعمدة دي: {still_missing}")
+            st.stop()
+
+        working_df = raw_df[[auto_mapping[c] for c in STANDARD_COLS]].copy()
+        working_df.columns = STANDARD_COLS
+
+    df = working_df
+    df["date"] = pd.to_datetime(df["date"], errors="coerce")
+    df["amount"] = pd.to_numeric(df["amount"], errors="coerce")
+
+    original_type_text = df["type"].astype(str)
+    df["type"], unclassified_types = normalize_type_values(df["type"])
+
+    if unclassified_types:
+        st.sidebar.markdown("#### تصنيف قيم غير معروفة في عمود Type")
+        manual_type_map = {}
+        for val in unclassified_types:
+            picked = st.sidebar.selectbox(
+                f"القيمة '{val}' تتصنف إزاي؟",
+                options=["تجاهل", "Revenue", "Expense"],
+                key=f"typeval_{val}"
+            )
+            if picked != "تجاهل":
+                manual_type_map[val] = picked
+
+        for val, standard in manual_type_map.items():
+            df.loc[original_type_text == val, "type"] = standard
+
+    rows_before = len(df)
+    bad_dates = df["date"].isna().sum()
+    bad_amounts = df["amount"].isna().sum()
+    df = df.dropna(subset=["date", "amount"])
+
+    invalid_type_rows = df[~df["type"].isin(VALID_TYPES)]
+    if not invalid_type_rows.empty:
+        st.sidebar.warning(
+            f"تم تجاهل {len(invalid_type_rows)} صف بقيم 'type' غير قابلة للتصنيف."
+        )
+        df = df[df["type"].isin(VALID_TYPES)]
+
+    if bad_dates or bad_amounts:
+        st.sidebar.warning(
+            f"تم تجاهل صفوف فيها تواريخ أو مبالغ غير صالحة "
+            f"({bad_dates} تاريخ غير صالح، {bad_amounts} مبلغ غير صالح)."
+        )
+
+    if df.empty:
+        st.sidebar.error(
+            f"بعد التنظيف، لم يتبقَّ أي صف صالح من أصل {rows_before} صف في الملف. "
+            "راجع ربط الأعمدة وقيم النوع (type)."
+        )
         st.stop()
 else:
     df = get_demo_data()
@@ -151,12 +385,15 @@ st.sidebar.markdown("### Filters")
 t_min, t_max = df["date"].min(), df["date"].max()
 picked_dates = st.sidebar.date_input("Date Range", value=(t_min, t_max))
 
-if len(picked_dates) == 2:
+# الإصلاح 1: تنبيه المستخدم لو اختار تاريخ واحد بس بدل range كامل
+if isinstance(picked_dates, (tuple, list)) and len(picked_dates) == 2:
     df = df[(df["date"] >= pd.to_datetime(picked_dates[0])) & (df["date"] <= pd.to_datetime(picked_dates[1]))]
+else:
+    st.sidebar.warning("من فضلك اختار تاريخ البداية والنهاية معًا لتطبيق الفلترة الزمنية.")
 
-all_cats = sorted(df["category"].unique())
+all_cats = sorted(df["category"].astype(str).unique())
 picked_cats = st.sidebar.multiselect("Categories", options=all_cats, default=all_cats)
-df = df[df["category"].isin(picked_cats)]
+df = df[df["category"].astype(str).isin(picked_cats)]
 
 if df.empty:
     st.warning("No data matches the selected criteria.")
@@ -170,8 +407,21 @@ total_exp = exp_data["amount"].sum()
 net_profit = total_rev - total_exp
 net_margin = (net_profit / total_rev * 100) if total_rev else 0
 
-cogs_labels = [c for c in exp_data["category"].unique() if "cogs" in c.lower() or "cost of" in c.lower()]
-cogs_val = exp_data[exp_data["category"].isin(cogs_labels)]["amount"].sum() if cogs_labels else 0
+# الإصلاح 3: السماح باختيار عمود/فئات الـ COGS يدويًا بدل الاعتماد على auto-detect هش
+st.sidebar.markdown("---")
+st.sidebar.markdown("### COGS Settings")
+auto_detected_cogs = [
+    c for c in exp_data["category"].astype(str).unique()
+    if "cogs" in c.lower() or "cost of" in c.lower()
+]
+all_exp_cats = sorted(exp_data["category"].astype(str).unique())
+cogs_labels = st.sidebar.multiselect(
+    "اختر الفئات اللي تمثّل COGS (تكلفة البضاعة المباعة)",
+    options=all_exp_cats,
+    default=auto_detected_cogs,
+    help="لو الفئة عندك اسمها مختلف زي 'Direct Costs'، اختارها يدويًا هنا."
+)
+cogs_val = exp_data[exp_data["category"].astype(str).isin(cogs_labels)]["amount"].sum() if cogs_labels else 0
 gross_profit = total_rev - cogs_val
 gross_margin = (gross_profit / total_rev * 100) if total_rev else 0
 
@@ -230,6 +480,8 @@ with tab_breakdown:
             fig_r.update_traces(marker=dict(colors=px.colors.sequential.Tealgrn))
             fig_r.update_layout(template="plotly_dark", plot_bgcolor="rgba(0,0,0,0)", paper_bgcolor="rgba(0,0,0,0)")
             st.plotly_chart(fig_r, use_container_width=True)
+        else:
+            st.info("لا توجد بيانات إيرادات ضمن الفلاتر الحالية.")
 
     with right_col:
         st.markdown("### Expense Sources")
@@ -239,6 +491,8 @@ with tab_breakdown:
             fig_e.update_traces(marker=dict(colors=px.colors.sequential.Burg))
             fig_e.update_layout(template="plotly_dark", plot_bgcolor="rgba(0,0,0,0)", paper_bgcolor="rgba(0,0,0,0)")
             st.plotly_chart(fig_e, use_container_width=True)
+        else:
+            st.info("لا توجد بيانات مصروفات ضمن الفلاتر الحالية.")
 
 with tab_anomalies:
     st.markdown("### Unusual Transactions Detector")
